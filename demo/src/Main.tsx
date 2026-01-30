@@ -1,12 +1,12 @@
 import { ReactElement, useEffect, useState } from "react";
-import { defaultSkin } from "./config/skin.config";
+// import { defaultSkin } from "./config/skin.config";
 import { NAME, TAG_LINE } from "./config/branding.config";
 import { appsConfig } from "./config/apps.config";
 import { getViewportParams, ProzillaOS, Router } from "prozilla-os";
 import { macOsSkin, minimalSkin, pixelSkin, windows95Skin } from "@prozilla-os/skins";
 
 export function Main(): ReactElement {
-	const [skin, setSkin] = useState(defaultSkin);
+	const [skin, setSkin] = useState(windows95Skin);
 
 	useEffect(() => {
 		const params = getViewportParams();

@@ -1,0 +1,17 @@
+:root {
+    --desktop-text: #f0f0f0;
+}
+
+.ProzillaOS-DirectoryList,
+.ProzillaOS-DirectoryList__File,
+.ProzillaOS-DirectoryList__Folder {
+    color: var(--desktop-text);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+}
+
+.ProzillaOS-Desktop,
+.ProzillaOS-DirectoryList {
+    background-image: none;
+    background-color: #02657f; /* adjust for contrast */
+}

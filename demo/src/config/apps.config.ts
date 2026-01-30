@@ -1,11 +1,12 @@
-import { AppsConfig, browser, calculator, fileExplorer, mediaViewer, settings, terminal, textEditor, appCenter } from "prozilla-os";
+//import { AppsConfig, browser, calculator, fileExplorer, mediaViewer, settings, terminal, textEditor, appCenter } from "prozilla-os";
+import { AppsConfig, browser, fileExplorer, mediaViewer, settings, terminal, appCenter } from "prozilla-os";
 import { NAME } from "./branding.config";
-import { wordle } from "@prozilla-os/wordle";
-import { ballMaze } from "@prozilla-os/ball-maze";
-import { minesweeper } from "@prozilla-os/minesweeper";
-import { logicSim } from "@prozilla-os/logic-sim";
-import { blissRadio } from "@prozilla-os/bliss-radio";
-import { Melodix as melodix } from "@taygotfound/melodix";
+//import { wordle } from "@prozilla-os/wordle";
+//import { ballMaze } from "@prozilla-os/ball-maze";
+//import { minesweeper } from "@prozilla-os/minesweeper";
+//import { logicSim } from "@prozilla-os/logic-sim";
+//import { blissRadio } from "@prozilla-os/bliss-radio";
+//import { Melodix as melodix } from "@taygotfound/melodix";
 
 export const appsConfig = new AppsConfig({
 	apps: [
@@ -17,9 +18,9 @@ export const appsConfig = new AppsConfig({
 			.setDescription("A command line tool inspired by the Unix shell that runs entirely in your browser using ProzillaOS. Allows you to interact and manipulate the virtual drive and run silly commands.")
 			.setIconUrl("/assets/apps/icons/terminal.svg")
 			.setShowDesktopIcon(true),
-		textEditor.setName("Notes")
-			.setDescription("Text editor for reading and writing text documents in a virtual file system using ProzillaOS.")
-			.setIconUrl("/assets/apps/icons/text-editor.svg"),
+		// textEditor.setName("Notes")
+		// 	.setDescription("Text editor for reading and writing text documents in a virtual file system using ProzillaOS.")
+		// 	.setIconUrl("/assets/apps/icons/text-editor.svg"),
 		settings.setName("Settings")
 			.setDescription(`Configure ${NAME}'s settings and customize your experience.`)
 			.setIconUrl("/assets/apps/icons/settings.svg"),
@@ -29,28 +30,28 @@ export const appsConfig = new AppsConfig({
 			.setDescription("Browse the internet.")
 			.setIconUrl("/assets/apps/icons/browser.svg")
 			.setShowDesktopIcon(true),
-		calculator.setName("Maths")
-			.setDescription("Simple calculator app.")
-			.setIconUrl("/assets/apps/icons/calculator.svg")
-			.setPinnedByDefault(true),
+		//calculator.setName("Maths")
+		// 	.setDescription("Simple calculator app.")
+		// 	.setIconUrl("/assets/apps/icons/calculator.svg")
+		// 	.setPinnedByDefault(true),
 		appCenter.setName("Apps")
 			.setDescription(`Browse and install ${NAME} apps.`)
 			.setPinnedByDefault(false),
-		wordle.setIconUrl("/assets/apps/icons/wordle.svg")
-			.setPinnedByDefault(false),
-		// .setShowDesktopIcon(true),
-		ballMaze.setIconUrl("/assets/apps/icons/ball-maze.svg")
-			.setPinnedByDefault(false)
-			.setShowDesktopIcon(true),
-		minesweeper.setIconUrl("/assets/apps/icons/minesweeper.svg")
-			.setPinnedByDefault(false)
-			.setShowDesktopIcon(true),
-		logicSim.setName("Logic Sim (WIP)")
-			.setDescription("Create digital logic circuits using the online simulator.")
-			.setIconUrl("/assets/apps/icons/logic-sim.svg"),
-		blissRadio.setName("Bliss Radio")
-			.setDescription(`Listen to Bliss Radio on ${NAME}.`),
-		melodix.setName("Melodix")
-			.setDescription("Listen to music on Melodix."),
+		//wordle.setIconUrl("/assets/apps/icons/wordle.svg")
+		// 	.setPinnedByDefault(false)
+		// 	.setShowDesktopIcon(true),
+		// ballMaze.setIconUrl("/assets/apps/icons/ball-maze.svg")
+		// 	.setPinnedByDefault(false)
+		// 	.setShowDesktopIcon(true),
+		//minesweeper.setIconUrl("/assets/apps/icons/minesweeper.svg")
+		// 	.setPinnedByDefault(false)
+		// 	.setShowDesktopIcon(true),
+		// logicSim.setName("Logic Sim (WIP)")
+		// 	.setDescription("Create digital logic circuits using the online simulator.")
+		// 	.setIconUrl("/assets/apps/icons/logic-sim.svg"),
+		//blissRadio.setName("Bliss Radio")
+		// 	.setDescription(`Listen to Bliss Radio on ${NAME}.`),
+		//melodix.setName("Melodix")
+		// 	.setDescription("Listen to music on Melodix."),
 	],
 });
