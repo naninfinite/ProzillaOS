@@ -34,10 +34,10 @@
 	font-display: swap;
 }
 
-body {
+/* body {
 	font-smooth: never;
 	-webkit-font-smoothing : none;
-}
+} */
 
 .ProzillaOS-Taskbar {
 	--taskbar-color: var(--background-color-4);

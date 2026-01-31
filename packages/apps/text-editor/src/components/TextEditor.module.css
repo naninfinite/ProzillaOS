@@ -8,8 +8,7 @@
 
 .TextEditor p,
 .TextEditor div,
-.TextEditor span,
-.TextEditor textarea {
+.TextEditor span {
 	font-size: 1em;
 }
 
@@ -21,10 +20,14 @@
 	background-color: var(--background-color-2) !important;
 	border: none;
 	outline: none;
-	font-size: 1rem;
-	font-family: var(--body-font-family);
+	font-size: inherit;
+	/* font-family: var(--body-font-family); */
+	font-family: Tahoma, Verdana, Arial, sans-serif;
 	resize: none;
 	overflow: auto;
+}
+.textEditor textarea.View {
+	font-size: 1.25em;
 }
 
 .View {
