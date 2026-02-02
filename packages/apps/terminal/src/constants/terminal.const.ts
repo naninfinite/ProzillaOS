@@ -1,7 +1,7 @@
 import { ANSI } from "@prozilla-os/shared";
 
 export const USERNAME = "user";
-export const HOSTNAME = "prozilla-os";
+export const HOSTNAME = "aaron-os";
 export const MAX_WIDTH = 50;
 
 export const WELCOME_MESSAGE = `${ANSI.fg.cyan + ANSI.decoration.dim}$APP_NAME - Made by Prozilla${ANSI.reset}`
