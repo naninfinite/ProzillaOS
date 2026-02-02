@@ -79,7 +79,8 @@ export function loadDefaultData(systemManager: SystemManager, virtualRoot: Virtu
 					documentsFolder.createFile("text", "txt", (file) => {
 						file.setContent("Hello world!");
 					}).createFile("test", "md", (file) => {
-						file.setSource("/documents/test.md");
+						// file.setSource("/documents/test.md"); //read only
+						file.setContent("これらはtest"); //read and write
 					});
 				
 					// }).createFile("Info", "md", (file) => {
@@ -107,8 +108,9 @@ export function loadDefaultData(systemManager: SystemManager, virtualRoot: Virtu
 						(folderLink as VirtualFolderLink).setLinkedPath(linkedPaths.images);
 					}).createFolderLink("Documents", (folderLink) => {
 						(folderLink as VirtualFolderLink).setLinkedPath(linkedPaths.documents);
-					}).createFile("Documentation", undefined, (file) => {
-						file.setSource(FILE_SCHEMES.external + "https://os.prozilla.dev/docs/");
+					// })
+					// .createFile("Documentation", undefined, (file) => {
+					// 	file.setSource(FILE_SCHEMES.external + "https://os.prozilla.dev/docs/");
 					});
 
 					appsConfig.apps.forEach((app) => {

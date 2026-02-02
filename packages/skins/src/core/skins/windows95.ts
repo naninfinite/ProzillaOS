@@ -13,7 +13,7 @@ export const windows95Skin = new Skin({
 		"media-viewer": "/assets/skins/windows95/apps/icons/media-viewer.svg",
 		"minesweeper": "/assets/skins/windows95/apps/icons/minesweeper.svg",
 		"settings": "/assets/skins/windows95/apps/icons/settings.svg",
-		"terminal": "/assets/skins/windows95/apps/icons/terminal.svg",
+		"terminal": "/assets/Windows_98_CONSOLE_PROMPT_blevel.png",
 		"text-editor": "/assets/skins/windows95/apps/icons/text-editor.svg",
 	},
 	appNames: {
@@ -21,7 +21,7 @@ export const windows95Skin = new Skin({
 		"calculator": "Calculator",
 		"file-explorer": "Windows Explorer",
 		"media-viewer": "Imaging",
-		"terminal": "MS-DOS Prompt",
+		"terminal": "Terminal",
 		"text-editor": "Notepad",
 	},
 	wallpapers: [
